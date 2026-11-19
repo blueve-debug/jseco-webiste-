@@ -5,14 +5,15 @@ import { NextResponse } from 'next/server';
 const SESSION_COOKIE_NAME = 'sp-admin-session';
 
 const rawSecret = process.env.JWT_SECRET;
-if (process.env.NODE_ENV === 'production' && (!rawSecret || rawSecret.length < 32)) {
+const isBuildPhase = process.env.NEXT_PHASE === 'phase-production-build' || process.env.npm_lifecycle_event === 'build';
+if (process.env.NODE_ENV === 'production' && !isBuildPhase && (!rawSecret || rawSecret.length < 32)) {
   console.warn(
     'SECURITY WARNING: JWT_SECRET environment variable is missing or shorter than 32 characters. Ensure a strong 64-character secret is set in production.'
   );
 }
 
 const JWT_SECRET_KEY = new TextEncoder().encode(
-  rawSecret || 'fallback-secret-key-change-in-production-ges-rvsf-2026'
+  rawSecret || 'jseco-super-secret-jwt-key-2026-production-fallback-minimum-64-bytes-long'
 );
 
 export interface SessionPayload {
