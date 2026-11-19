@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import ValuationModal, { ValuationModalData } from '@/components/ValuationModal';
+import CircularEcosystemAnimation from '@/components/CircularEcosystemAnimation';
 import {
   Car,
   Bike,
@@ -521,6 +522,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ======= THEME-RELATED CIRCULAR ECOSYSTEM ANIMATION (SVG CLOSED-LOOP) ======= */}
+      <CircularEcosystemAnimation />
 
       {/* ======= WHY CHOOSE ======= */}
       <section className="section compare-section">
