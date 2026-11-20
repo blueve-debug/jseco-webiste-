@@ -154,7 +154,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} JSECO. Registered Vehicle Scrapping Facility (RVSF).</p>
+          <p>&copy; {new Date().getFullYear()} JSECO. M/S Royal Motors Facility.</p>
         </div>
       </footer>
       <RvsfFloatingBadge />
