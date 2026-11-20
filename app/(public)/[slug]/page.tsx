@@ -156,7 +156,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title: page.metaTitle,
       description: page.metaDescription,
       url: page.canonicalUrl,
-      siteName: 'JSECO Private Limited',
+      siteName: 'JSECO',
       locale: 'en_IN',
       type: 'website',
       images: [
@@ -197,7 +197,7 @@ export default async function SeoLandingPage({ params }: PageProps) {
       {
         '@type': 'LocalBusiness',
         '@id': 'https://goodecosolutions.in/#organization',
-        name: 'JSECO Private Limited',
+        name: 'JSECO',
         alternateName: 'JSECO RVSF Baghpat',
         url: page.canonicalUrl,
         logo: 'https://goodecosolutions.in/logo.jpeg',
@@ -541,7 +541,7 @@ export default async function SeoLandingPage({ params }: PageProps) {
               </div>
             </div>
             <div className="cta-info-card">
-              <h3>JSECO Private Limited</h3>
+              <h3>JSECO</h3>
               <span className="compare-badge compare-good">MoRTH Authorized RVSF</span>
               <div style={{ color: '#1e293b', fontSize: '13px', margin: '14px 0', textAlign: 'left', lineHeight: '1.8', display: 'flex', flexDirection: 'column', gap: '4px' }}>
                 <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px' }}>

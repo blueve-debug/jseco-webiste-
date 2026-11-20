@@ -82,7 +82,7 @@ export async function getEmailSettings(): Promise<EmailSettings> {
         hostingerSenderEmail:
           data.hostingerSenderEmail || process.env.HOSTINGER_SENDER_EMAIL || 'care@jseco.in',
         hostingerSenderName:
-          data.hostingerSenderName || process.env.HOSTINGER_SENDER_NAME || 'JSECO Private Limited',
+          data.hostingerSenderName || process.env.HOSTINGER_SENDER_NAME || 'JSECO',
         smtpHost: data.smtpHost || process.env.SMTP_HOST || '',
         smtpPort: data.smtpPort ? Number(data.smtpPort) : Number(process.env.SMTP_PORT) || 587,
         smtpSecure:
@@ -94,7 +94,7 @@ export async function getEmailSettings(): Promise<EmailSettings> {
         smtpFromEmail:
           data.smtpFromEmail ||
           process.env.SMTP_FROM ||
-          '"JSECO Private Limited" <care@jseco.in>',
+          '"JSECO" <care@jseco.in>',
       };
     }
   } catch (err) {
@@ -107,13 +107,13 @@ export async function getEmailSettings(): Promise<EmailSettings> {
     hostingerApiKey: process.env.HOSTINGER_MAIL_API_KEY || '',
     hostingerMailboxId: process.env.HOSTINGER_MAILBOX_ID || '',
     hostingerSenderEmail: process.env.HOSTINGER_SENDER_EMAIL || 'care@jseco.in',
-    hostingerSenderName: process.env.HOSTINGER_SENDER_NAME || 'JSECO Private Limited',
+    hostingerSenderName: process.env.HOSTINGER_SENDER_NAME || 'JSECO',
     smtpHost: process.env.SMTP_HOST || '',
     smtpPort: Number(process.env.SMTP_PORT) || 587,
     smtpSecure: process.env.SMTP_SECURE === 'true',
     smtpUser: process.env.SMTP_USER || '',
     smtpPassword: process.env.SMTP_PASSWORD || '',
-    smtpFromEmail: process.env.SMTP_FROM || '"JSECO Private Limited" <care@jseco.in>',
+    smtpFromEmail: process.env.SMTP_FROM || '"JSECO" <care@jseco.in>',
   };
 }
 
@@ -701,7 +701,7 @@ export async function sendCustomerAcknowledgmentEmail(data: InquiryNotificationD
         <p style="font-size: 14px; color: #334155; margin-bottom: 0;">
           Warm regards,<br />
           <strong>Client Relations &amp; Valuation Team</strong><br />
-          <span style="color: #64748b; font-size: 13px;">JSECO Private Limited &bull; Authorized RVSF Network</span>
+          <span style="color: #64748b; font-size: 13px;">JSECO &bull; Authorized RVSF Network</span>
         </p>
 
       </td>
@@ -710,7 +710,7 @@ export async function sendCustomerAcknowledgmentEmail(data: InquiryNotificationD
     <!-- Footer -->
     <tr>
       <td style="background: #f8faf8; padding: 22px 36px; text-align: center; font-size: 11.5px; color: #64748b; border-top: 1px solid #eef2ef;">
-        <div>JSECO Private Limited &bull; Ministry of Road Transport &amp; Highways Compliant Facilities</div>
+        <div>JSECO &bull; Ministry of Road Transport &amp; Highways Compliant Facilities</div>
         <div style="margin-top: 4px;">You received this automated receipt because an inquiry was placed with reference #${reference}.</div>
       </td>
     </tr>

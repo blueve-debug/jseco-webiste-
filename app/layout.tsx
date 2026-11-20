@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     "Parivahan vehicle scrapping",
     "Vahan vehicle scrapping"
   ],
-  authors: [{ name: "JSECO Private Limited" }],
-  creator: "JSECO Private Limited",
-  publisher: "JSECO Private Limited",
+  authors: [{ name: "JSECO" }],
+  creator: "JSECO",
+  publisher: "JSECO",
   icons: {
     icon: "/logo.jpeg",
     shortcut: "/logo.jpeg",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     title: "JSECO | Authorised RVSF Vehicle Scrapping Facility",
     description: "JSECO is a registered vehicle scrapping facility. Best scrap car prices, doorstep pickup, and instant Certificate of Deposit (COD).",
     url: "https://goodecosolutions.in",
-    siteName: "JSECO Private Limited",
+    siteName: "JSECO",
     locale: "en_IN",
     type: "website",
     images: [

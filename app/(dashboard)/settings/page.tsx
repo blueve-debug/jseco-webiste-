@@ -1662,7 +1662,7 @@ export default function SettingsPage() {
                       <input
                         type="text"
                         className="form-input"
-                        placeholder="JSECO Private Limited"
+                        placeholder="JSECO"
                         value={settings.hostingerSenderName ?? ''}
                         onChange={(e) => updateSettingField('hostingerSenderName', e.target.value)}
                       />
@@ -1777,7 +1777,7 @@ export default function SettingsPage() {
                         <input
                           type="text"
                           className="form-input"
-                          placeholder='"JSECO Private Limited" <care@jseco.in>'
+                          placeholder='"JSECO" <care@jseco.in>'
                           value={settings.smtpFromEmail ?? ''}
                           onChange={(e) => updateSettingField('smtpFromEmail', e.target.value)}
                         />

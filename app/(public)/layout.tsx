@@ -56,7 +56,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
         <div className="header-inner">
           <Link href="/" className="logo">
             <img src="/logo.jpeg" alt="JSECO Logo" className="logo-img" />
-            <span className="logo-text">JSECO <strong>PVT LTD</strong></span>
+            <span className="logo-text">JSECO</span>
           </Link>
           <nav className="nav-links">
             <Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link>
@@ -91,7 +91,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
           <div className="footer-brand">
             <div className="logo footer-logo">
               <img src="/logo.jpeg" alt="JSECO Logo" className="logo-img" />
-              <span className="logo-text">JSECO <strong>PVT LTD</strong></span>
+              <span className="logo-text">JSECO</span>
             </div>
             <p>
               is committed to building a cleaner, greener and more sustainable future through responsible 
@@ -154,7 +154,7 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} JSECO PRIVATE LIMITED. Registered Vehicle Scrapping Facility (RVSF).</p>
+          <p>&copy; {new Date().getFullYear()} JSECO. Registered Vehicle Scrapping Facility (RVSF).</p>
         </div>
       </footer>
       <RvsfFloatingBadge />
